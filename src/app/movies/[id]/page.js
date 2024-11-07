@@ -8,8 +8,7 @@ async function getMovieAndCredits(params) {
 
     // Film detaylarını alıyoruz
     const movieResponse = await fetch(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`,
-      { next: { revalidate: 60 } }
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`
     );
 
     if (!movieResponse.ok) return null;
