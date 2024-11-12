@@ -8,7 +8,7 @@ const getData = async () => {
     `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`
   );
   const data = await response.json();
-  return data.results.slice(0, 6); // İlk 6 filmi alıyoruz
+  return data.results.slice(3, 9); //  6 film seçiyoruz
 };
 
 export default async function Home() {
